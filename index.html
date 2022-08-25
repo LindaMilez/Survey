@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree Survey Form</title>
+    <style>
+      .container { position: center; font-family: serif; font-size: 22px;}
+      .text-block {position: absolute; top: 10px; right: 230px; height: 1372px;
+        width: 550px; border-radius: 12px;
+        background-color: rgb(41, 57, 41); opacity: 0.7; color: white;
+        padding-left: 180px; padding-right: 180px; padding-top: 100px; text-align: center;}
+        .button {background-color: #4CAF50; border: none; padding: 7px 320px; text-align: center;
+        display: inline-block; font-size: 20px; margin: 10px 0px 0px -90px; cursor: pointer;}
+      </style>
+  </head>
+  <body>
+    <div class="container"><img src="pictree.png" alt="Nature" style="width: 100%" />
+      <div class="text-block"><div class="container">
+          <img src="smalltree.png" alt="tree" style="float: left; margin-top: -100px; margin-left: -170px;" />
+        <h1 style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px">
+          Tree Survey Form
+        </h1>
+        <p
+          style="font-size: 28px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;"
+        >
+          A survey form on the health of the environment
+        </p>
+        <p
+          style="text-align: left; margin: 50px 0px 0px -150px; font-size: 26px;"
+        >
+          Name:
+        </p>
+        <style>
+          input[type=text], select {width: 150%; padding: 12px 100px 20px 0px; margin: 20px 100px 30px -150px;
+            display: inline-block; border: 1px rgb(40, 39, 39); background-color: #ffffff; 
+            border-radius: 4px; font-size: 16px;box-sizing: border-box;}
+            
+          input[type=text], select {width: 150%; padding: 12px 100px 20px 0px; margin: 20px 100px 30px -150px;
+            display: inline-block; border: 1px rgb(40, 39, 39); background-color: #ffffff;
+            border-radius: 4px; font-size: 16px; box-sizing: border-box;}
+
+          input[type=number], select {width: 150%; padding: 12px 100px 20px 0px; margin: 20px 100px 30px -150px;
+            display: inline-block; border: 1px rgb(40, 39, 39); background-color: #ffffff;
+            border-radius: 4px; font-size: 16px; box-sizing: border-box;}
+
+          input[type=continent], select {width: 150%;padding: 12px 100px 20px 0px; margin: 20px 100px 30px -150px;
+            display: inline-block; border: 1px rgb(40, 39, 39); background-color: #ffffff;
+            border-radius: 4px; font-size: 16px; box-sizing: border-box;}
+        </style>
+        <body>
+          <div><form action="/action_page.php">
+              <input type="text" id="fname" required name="Name"placeholder="Enter your name e.g John Doe">
+            </form> 
+          </div>
+          </p>
+        <p
+          style="text-align: left; margin: -40px 0px 0px -150px; font-size: 28px;"
+        >
+          Email:
+        </p>
+        <div><form action="/action_page.php">
+            <input type="text" id="fname" required name="E mail" placeholder="xyz@someplace.com"></form> 
+        </div>
+        <p
+          style="text-align: left; margin: -20px 0px 0px -150px; font-size: 26px;"
+        >
+          Age(Optional):
+        </p>
+        <div><form action="/action_page.php">
+            <input type="number" id="fname" required name="Age" placeholder="10"/></form> 
+        </div>
+
+        <p
+          style="text-align: center; margin: -17px 0px 0px -150px; font-size: 26px;"
+        >
+          Select continent of residence
+        </p>
+        <div>
+            <select>
+              <option value="North America">North America</option>
+              <option value="Asia">Asia</option>
+              <option value="South America">South America</option>
+              <option value="Africa">Africa</option>
+              <option value="Europe">Europe</option>
+              <option value="Australia">Australia</option>
+            </select>
+            </form> 
+        </div>
+        <p
+        style="text-align: center; margin: -17px 0px 0px -150px; font-size: 30px; 
+        font-family: Arial Bold;"
+      >
+        Choose your prefered gender
+        </p>
+      </br>
+    </br>
+  </br>
+</br>
+</br>
+          <p
+          style="text-align: left; margin: -100px 0px 0px -150px; font-size: 28px;"
+        >
+        <label>
+        <input type="radio" name="gender" checked value="Female"/></label>
+         Female
+        </p>
+        </br>
+        <p style="text-align: left; margin: -20px 0px 0px -150px; font-size: 28px;"
+        >
+        <input type="radio" id="male" name="gender"/>
+        <label for="male"></label>
+          Male
+        </p>
+      </br>
+        <p style="text-align: left; margin: -20px 0px 0px -150px; font-size: 28px;"
+        ><label>
+        <input type="radio" name="gender" checked value="Other"/></label>
+         Other
+        </p>
+      <h3>Please select atleast one of the options below:</h3>
+    </br>
+       <p style="text-align: left; margin: -30px 0px 0px -150px; font-size: 28px;"
+        ><input type="checkbox" checked/>
+        <label>I have planted a tree or any other plant</label>
+</br>
+</br>
+        <input type="checkbox" checked/> 
+        <label>I take part in community service for the environment</label>
+</br>
+</br>
+        <input type="checkbox" checked/>
+        <label>I promise to plant more from now on</label>
+       </p>
+    </br>
+  <h3>Any comments or suggestions</h3>
+    </br>
+  </br>
+</br>
+  <textarea rows="5" cols="60" maxlength="500" input type="text" placeholder="Comments / Suggestions..." 
+  style="text-align: left; margin: -100px 0px 0px -150px; font-size: 23px; height: 200px; 
+  background-color: white;"></textarea>
+<input type="Submit" class="button" value="Submit">
+</body>
+</html>
